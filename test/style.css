@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+}
+body
+{
+    font-family: sans-serif;
+    background-color: blanchedalmond;
+}
+.top-nav-bar
+{
+   height: 57px;
+    top: 0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(9, 136, 87);
+    z-index: 2;
+}
+.logo
+{
+    height: 40px;
+    width: 100px;
+    /* margin: 5px 10px; */
+}
+.form-control
+{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid rgb(71, 119, 190) !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+    
+}
+.input-group-text
+{
+    background: rgb(49, 126, 177) !important;
+    border: 1px solid rgb(29, 102, 145) !important;
+    margin: 8px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.search-box
+{
+    display: inline-flex;
+    width: 20%;
+}
+.fa-search
+{
+    color: #fff;
+}
+.menu-bar
+{
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li
+{
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: rgb(24, 39, 53);
+    cursor: pointer;
+}
+.menu-bar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar
+    {
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box
+    {
+        width: 100%;
+    }
+    .menu-bar
+    {
+        width: 100%;
+    }
+    .menu-bar ul
+    {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .menu-bar ul li
+    {
+        height: 57px;
+        width: 100%;
+    } 
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
