@@ -1,23 +1,25 @@
 <?php
 //session_start();
-require_once "server/dbconnect.php";   //connecting the database using include method
-// $conn = mysqli_connect('localhost','root','','project');
 
+include "connection.php";
+session_start();
 if(isset($_POST["submit"])) //checks if the user has clicked on the submit button or not
 {
-
-    //real_escape_string() for extra layer of protection
-    $fname = mysqli_real_escape_string($conn,$_POST["fname"]);
     
-    $lname = mysqli_real_escape_string($conn,$_POST["lname"]);
+    //real_escape_string() for extra layer of protection
+    $fname = $_POST["fname"];
+    
+    $lname = $_POST["lname"];
 
-    $email = mysqli_real_escape_string($conn,$_POST["email"]);
+    $email = $_POST["email"];
 
-    $addr = mysqli_real_escape_string($conn,$_POST["address"]);
-    $phone = mysqli_real_escape_string($conn,$_POST["phone"]);
-    // $username = mysqli_real_escape_string($conn,$_POST["name"]);
-    $pass = mysqli_real_escape_string($conn,$_POST["password"]);
-    $cpass = mysqli_real_escape_string($conn,$_POST["cpassword"]);
+    $addr = $_POST["address"];
+
+    $phone = $_POST["phone"];
+    // $username = $_POST["name"];
+    $pass = $_POST["password"];
+
+    $cpass = $_POST["cpassword"];
 
     $password = password_hash($pass,PASSWORD_BCRYPT);// hashing the password using blowfish algorithm
     $cpassword = password_hash($cpass,PASSWORD_BCRYPT);
@@ -30,14 +32,17 @@ if(isset($_POST["submit"])) //checks if the user has clicked on the submit butto
     
     $emailcount = mysqli_num_rows($query);
 
-
-    if($emailcount>0)
+    if($emailcount == 1)
     {
         ?>
-                    <script>
+                     <script>
                     alert("Email Already Exists");
-                    </script>
+                     </script>
         <?php
+      
+        // header('Location: register.php');
+        // die;
+        // $_SESSION['error'] = true;
     }
     else
     {
@@ -45,28 +50,27 @@ if(isset($_POST["submit"])) //checks if the user has clicked on the submit butto
          if($pass==$cpass)
          {
              //
-             $insertquery = "INSERT INTO users (fname, lname, email, address, phone, password, cpassword)
-            VALUES ('$fname','$lname','$email','$addr','$phone','$password','$cpassword')";
+            $insertquery = "INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `address`, `phone`, `password`, `cpassword`) 
+            VALUES (NULL, ' $fname', '$lname ', '$email ', '$addr ', '$phone ', '$password ', '$cpassword')";
              
-            $iqeury = mysqli_query($conn,$insertquery);
+            $iquery = mysqli_query($conn,$insertquery);
 
-            if($iqeury)
+            if($iquery)
             {
-                echo "Registered successfully";
-                //    header('location: mainpage.php');
-//                    ob_end_flush();
-
-                
-                } 
+                    $_SESSION['name']=$fname;
+                   header('Location: ../mainpage.php');
+                   die;
+            } 
              else
-                {
+             {
                     ?>
                     <script>
                     alert("Failed to Register");
                     </script>
-                <?php 
+                    <?php 
+                
 
-                }
+            }
     
          }
          else
