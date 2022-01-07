@@ -10,10 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><!--Goog;e Map-->
+        <script src="js/map.js"></script>
     </head>
     
     <body> 
-
+        <!--Top Navbar-->
         <!--header-->
 
         <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong">
@@ -143,7 +145,8 @@
                 <div class="carousel-inner">
                   <div class="effsed carousel-item active">
                       <figure class="effect">
-                    <img src="images/Pokhara.jpg" class="d-block w-100" alt="Los Angeles" width="1100" height="500">
+                <!--    <img src="images/Pokhara.jpg" class="d-block w-100" alt="Pokhara" width="1100" height="500">
+-->             <a href="pokhara.html"><img src="images/Pokhara.jpg" alt="Pokhara" srcset="" width="1100" height="500"></a>
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Pokhara</h3>
@@ -154,7 +157,8 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <img src="images/Solu.jpg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+                        <!--Need to change the respective of the places replacing 404 page-->
+                    <a href="pokhara.html">  <img src="images/Solu.jpg" class="d-block w-100" alt="Solukhumbu" width="1100" height="500"></a>
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Solukhumbu</h3>
@@ -165,7 +169,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <img src="images/Mustang.jpg" class="d-block w-100" alt="New York" width="1100" height="500">
+                    <a href="mustang.html">   <img src="images/Mustang.jpg" class="d-block w-100" alt="Mustang" width="1100" height="500"></a>
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Mustang</h3>
@@ -176,7 +180,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <img src="images/Chitwan.jpg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+                    <a href="chitwan.html">   <img src="images/Chitwan.jpg" class="d-block w-100" alt="Chitwan" width="1100" height="500"></a>
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Chitwan</h3>
@@ -187,7 +191,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <img src="images/Karnali.jpeg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+                    <a href="pokhara.html">   <img src="images/Karnali.jpeg" class="d-block w-100" alt="Karnali" width="1100" height="500"></a>
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Karnali</h3>
@@ -253,6 +257,13 @@
                     </div>
                 </div>
             </section>
+            <!--Geolocation Google Map-->
+            <div id="map">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async></script>
+            <br>
+            <h4>Here Goes a map need to adjust padding this map has the current user location address only no any places or hotels nearby it included</h4>
+            </div>
+           
 
 
         <!-- footer -->
@@ -274,15 +285,16 @@
                         <a href="#" class="nav-link">Contact</a>
                         
                     </div>
-                    <div class="col-md-3">
+                  <!--  <div class="col-md-3">
                         <h1>Follow Us On</h1>
                         <p><i class="fa fa-facebook-official"></i> Facebook</p>
                         <p><i class="fa fa-twitter"></i> Twitter</p>
                     </div>
                 </div>
-                <hr>
+-->
+                <br>
                 <p class="copyright">Made by Sagyan Sachin Lakpa</p>
-            </section>
+        </section>
 
     </body>
 </html>
