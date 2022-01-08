@@ -10,12 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><!--Goog;e Map-->
-        <script src="js/map.js"></script>
     </head>
     
     <body> 
-        <!--Top Navbar-->
+
         <!--header-->
 
         <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong">
@@ -37,7 +35,7 @@
                         <a href="#" class="nav-link">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACT</a>
+                        <a href="#" class="nav-link">CONTACT US </a>
                     </li>
                 </ul>
             </div> 
@@ -81,6 +79,7 @@
                         </div>
                         
                 </div>
+                
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
@@ -88,12 +87,14 @@
                                 <span class="pic-icon"><img src="images/mountain.png" height="80px"></span>
                             </div>
                         </div>
+                       
                         <div class="media-body p-2 mt-2">
                             <h3 class="heading mb-3">Sites</h3>
                             <p>Immersive scenary of rivers, lakes, hills, valleys and mountains as rarely found in the world.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
@@ -145,8 +146,7 @@
                 <div class="carousel-inner">
                   <div class="effsed carousel-item active">
                       <figure class="effect">
-                <!--    <img src="images/Pokhara.jpg" class="d-block w-100" alt="Pokhara" width="1100" height="500">
--->             <a href="pokhara.html"><img src="images/Pokhara.jpg" alt="Pokhara" srcset="" width="1100" height="500"></a>
+                    <img src="images/pok1.jpg" class="d-block w-100" alt="Los Angeles" width="1200" height="600">
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Pokhara</h3>
@@ -157,8 +157,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                        <!--Need to change the respective of the places replacing 404 page-->
-                    <a href="pokhara.html">  <img src="images/Solu.jpg" class="d-block w-100" alt="Solukhumbu" width="1100" height="500"></a>
+                    <img src="images/img1.jpg" class="d-block w-100" alt="Chicago" width="1200" height="600">
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Solukhumbu</h3>
@@ -169,7 +168,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <a href="mustang.html">   <img src="images/Mustang.jpg" class="d-block w-100" alt="Mustang" width="1100" height="500"></a>
+                    <img src="images/Mustang.jpg" class="d-block w-100" alt="New York" width="1100" height="600">
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Mustang</h3>
@@ -180,7 +179,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <a href="chitwan.html">   <img src="images/Chitwan.jpg" class="d-block w-100" alt="Chitwan" width="1100" height="500"></a>
+                    <img src="images/Chitwan.jpg" class="d-block w-100" alt="Chicago" width="1100" height="600">
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Chitwan</h3>
@@ -191,7 +190,7 @@
                   </div>
                   <div class="effsed carousel-item">
                     <figure class="effect">
-                    <a href="pokhara.html">   <img src="images/Karnali.jpeg" class="d-block w-100" alt="Karnali" width="1100" height="500"></a>
+                    <img src="images/Karnali.jpeg" class="d-block w-100" alt="Chicago" width="1100" height="500">
                     <div class="carousel-caption">
                         <figcaption>
                       <h3>Karnali</h3>
@@ -257,18 +256,135 @@
                     </div>
                 </div>
             </section>
-            <!--Geolocation Google Map-->
-            <div id="map">
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async></script>
-            <br>
-            <h4>Here Goes a map need to adjust padding this map has the current user location address only no any places or hotels nearby it included</h4>
+
+<!-- About Section -->
+
+     <!-- <section id="about-sec">
+      <div class="about-header">
+        <h5 class="heading">Just show up!</h5>
+        <h2 class="about-body">
+          Create healthy change through body,<br />mind and spirit
+        </h2>
+      </div>
+      <div class="about-info">
+        <div class="about-block">
+          <img src="./images/pic2.jpg" alt="lotus" class="about-img" />
+          <div class="about-info-div">
+            <h3 class="about-info-header">Reduce Stress</h3>
+            <p>
+              Lorem ipsum dolor sit amet, mind and spiritconsectetur adipiscing
+              elit, mind and spiritconsectetur adipiscing do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        Lorem ipsum dolor sit amet, mind and spiritconsectetur adipiscing
+              elit, mind and spiritconsectetur adipiscing do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-block">
+          <img src="./images/pic01-2.jpg" alt="brain" class="about-img" />
+          <div class="about-info-div">
+            <h3 class="about-info-header">Reduce Stress</h3>
+            <p>
+              Lorem ipsum dolor sit amet, mind and spiritconsectetur adipiscing
+              elit, mind and spiritconsectetur adipiscing do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>     <div class="about-block">
+          <img src="./images/pic01.jpg" alt="yoga" class="about-img" />
+          <div class="about-info-div">
+            <h3 class="about-info-header">Reduce Stress</h3>
+            <p>
+              Lorem ipsum dolor sit amet, mind and spiritconsectetur adipiscing
+              elit, mind and spiritconsectetur adipiscing do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-block">
+          <img src="./images/pic01-2.jpg" alt="brain" class="about-img" />
+          <div class="about-info-div">
+            <h3 class="about-info-header">Reduce Stress</h3>
+            <p>
+              Lorem ipsum dolor sit amet, mind and spiritconsectetur adipiscing
+              elit, mind and spiritconsectetur adipiscing do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- End of about section -->
+
+
+    <!-- footer -->
+        <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4>Connect With us</h4>
+                    <p>We are here to help and answer any question you might have. We look forward to hearing from you
+                    </p>
+                    <div class="footer-social">
+                        <a href="" class="color"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="color"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="color"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="" class="color"><i class="fab fa-twitter"></i></a>
+
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>main menu</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> About us</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Blog</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Events</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Helpful links</h4>
+                    <ul>
+
+                        <li><a href=""><i class="fas fa-angle-right"></i> Supports</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i> Terms & Conditions</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> Plot No 47,Amrit Bhavan,Opposite to Axis
+                                Bank,Nagpur 440023</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +91 9397165725</a></li>
+                        <li><a href=""><i class="fas fa-envelope"></i> hi@fashio.com</a></li>
+                        <li><a href=""><i class="fas fa-globe"></i> www.fashionworld.com</a></li>
+                    </ul>
+                </div>
             </div>
-           
+            <!-- <div class="copy">
+                <p>&copy;  | All rights reserved |2021 </p>
+            </div> -->
+        </div>
+    </footer>
 
-
-        <!-- footer -->
-
-        <section class="footer">
+    <!-- <section class="footer">
             <div class="container tex-center">
                 <div class="row">
                     <div class="col-md-3">
@@ -285,16 +401,15 @@
                         <a href="#" class="nav-link">Contact</a>
                         
                     </div>
-                  <!--  <div class="col-md-3">
+                    <div class="col-md-3">
                         <h1>Follow Us On</h1>
                         <p><i class="fa fa-facebook-official"></i> Facebook</p>
                         <p><i class="fa fa-twitter"></i> Twitter</p>
                     </div>
                 </div>
--->
-                <br>
+                <hr>
                 <p class="copyright">Made by Sagyan Sachin Lakpa</p>
-        </section>
+            </section> -->
 
     </body>
 </html>
