@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustang</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+        function initMap() {
+  const mustang = {
+     lat: -97.726158, 
+     lng:  35.391701
+    };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: mustang,
+  });
+  const marker = new google.maps.Marker({
+    position: mustang,
+    map: map,
+  });
+}
+    </script>
+    <style>
+        #map {
+          height: 440px;
+          width: 400px;
+          margin: 1px;
+          padding-left: 90px;
+          padding-top: 60px;
+          padding-top: 60px;
+        }
+            </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong">
+        <a href="404.php" class="navbar-brand">
+            <img src="images/Logo 03.png" height="60px">   
+        </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div> 
+        <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
+    </nav> 
+    <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async>
+        </script>
+        <h3>Map Of Mustang</h3>
+    </div>
+</body>
+</html>

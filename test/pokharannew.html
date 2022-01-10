@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokhara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script>
+       function initMap() {
+
+  const pokhara = {
+     lat: 28.237988, 
+     lng: 83.995590
+    };
+
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: pokhara,
+  });
+  const marker = new google.maps.Marker({
+    position: pokhara,
+    map: map,
+  });
+}
+   </script>
+   <style>
+    body{
+        background-image: none;
+    }
+    #map {
+      height: 400px;
+      margin: 1px;
+      padding-left: 90px;
+    }
+    .nav-item >.nav-link{
+        background-color: rgb(6, 71, 68);
+    }
+   .contain{
+        width:800px;
+        height: 400px;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-bottom: 12px;
+        margin-right: 2px;
+        display:flex;
+    }
+    .contain:hover .tex{
+        max-height: 20%;
+    }
+    .tex {
+    padding-bottom: 10px;
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong">
+        <a href="404.php" class="navbar-brand">
+            <img src="images/Logo 03.png" height="60px">   
+        </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div> 
+        <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
+    </nav> 
+<!--Hotels-->
+    <section class="packages">
+                <h3> Hotels & Resturants</h3>
+        <div class="row1">
+                        <div class="contain">
+                                <img src="images/HotelBarahi.png" alt="Hotel1" class="imag">
+                                <div class="overl">
+                                    <div class="tex">Hotel Barahi</div>
+                                         <a class="button btn-pack" href="https://www.agoda.com/hotel-barahi/hotel/pokhara-np.html?cid=1844104" >Visit Here</a>
+                                </div>
+                        </div>
+                        
+            <div class="contain">
+             <img src="images/hotelKaruna.jpg" alt="Hotel2" class="imag">
+                    <div class="tex">Hotel Karuna</div>
+                         <a class="button btn-pack" href="https://www.tripadvisor.com/Hotel_Review-g293891-d12172169-Reviews-Hotel_Karuna-Pokhara_Gandaki_Zone_Western_Region.html" >Visit Here</a>
+            </div>
+                        
+                <div class="contain">
+                    <img src="images/Hotelnightangle.png" alt="hotel3" class="imag">
+                        <div class="tex">Hotel Nightangle</div>
+                            <a class="button btn-pack" href="https://www.hotels.com/ho633427/hotel-nightingale-pokhara-nepal/" >Visit here</a>  
+                </div>
+                <div class="contain">
+                    <img src="images/HotelKausi.png" alt="hotel4" class="imag">
+                        <div class="overl">
+                            <div class="tex">Hotel Kausi</div>
+                                <a class="button btn-pack" href="https://planetofhotels.com/en/nepal/pokhara/hotel-kausi" >Visit Here</a>
+                        </div>
+                </div>  
+        </div>
+    </section>
+    <br><br><br>
+<!--Ends Here-->
+
+    <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async>   
+        </script>
+        <h3>Map of Pokhara</h3>
+    </div>
+
+<!--Footer-->
+<section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+            </div>
+    
+            <div class="col-md-3">
+                <br>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#container" class="nav-link">Places to Visit</a>
+                <a href="#" class="nav-link">Contact</a>
+                
+            </div>
+        </div>
+    </div>
+            <br>
+                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
+
+</section>
+</body>
+</html>
