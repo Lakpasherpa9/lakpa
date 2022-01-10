@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokhara</title>
+    <link rel="stylesheet" href="style-test002.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <script>
+       function initMap() {
+
+        const pokhara = {
+        lat: 28.237988, 
+        lng: 83.995590
+         };
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: pokhara,
+        });
+        const marker = new google.maps.Marker({
+            position: pokhara,
+            map: map,
+        });
+}
+   </script>
+   <style>
+    body{
+        background-image: none;
+    }
+    #map {
+      height: 400px;
+      margin: 1px;
+      padding-left: 90px;
+    }
+
+    .navbar{
+        height: 70px;
+    }
+     /* .nav-item >.nav-link{
+        background-color: rgb(6, 71, 68);
+    }
+  /*  .contain{
+        width:800px;
+        height: 400px;
+        padding-left: 12px;
+        padding-right: 10px;
+        padding-bottom: 12px;
+        margin-right: 2px;
+        display:flex;
+    }
+    .contain:hover .tex{
+        max-height: 20%;
+    }
+    .tex {
+    padding-bottom: 10px;
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a href="404.php" class="navbar-brand">
+            <img src="images/Logo 03.png" height="60px">   
+        </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div> 
+        <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
+    </nav> 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--Carousel-->
+    <div class="container">
+        <div class="row justify-content-start mb-5 pb-3">
+            <div class="col-md-7 heading-section">
+                <br>
+                <h2><strong>TOP</strong> Destinations</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo" class="cara carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="effsed carousel-item active">
+              <figure class="effect">
+            <img src="images1/phewa low.jpg" class="d-block w-100" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <figcaption>
+              <h3>Phewa Lake</h3>
+              <p>It is the most popular and most visited lake of Nepal.</p>
+                </figcaption>
+            </div>
+            </figure>   
+          </div>
+          <div class="effsed carousel-item">
+            <figure class="effect">
+            <img src="images1/Machapuchre.jpg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <figcaption>
+              <h3>Machapuchare Mountain</h3>
+              <p> Its double summit resembles the tail of a fish.</p>
+            </figcaption>
+            </div>   
+        </figure> 
+          </div>
+          <div class="effsed carousel-item">
+            <figure class="effect">
+            <img src="images1/PARAGLIDING POKHARA.jpg" class="d-block w-100" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+                <figcaption>
+              <h3>Paragliding</h3>
+              <p>Fly in parachute, open your wings.</p>
+            </figcaption>
+            </div>   
+        </figure> 
+          </div>
+          <div class="effsed carousel-item">
+            <figure class="effect">
+            <img src="images1/Mahendra-Cave.jpg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <figcaption>
+              <h3>Mahendra Cave</h3>
+              <p> It is a rare example of a cave system in Nepal containing stalagmites and stalactites.</p>
+            </figcaption>
+            </div>  
+        </figure>  
+          </div>
+          <div class="effsed carousel-item">
+            <figure class="effect">
+            <img src="images1/Davids_Falls.jpg" class="d-block w-100" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <figcaption>
+              <h3>Davids Falls</h3>
+              <p>It is named after one of couple that fell into the tunnel.</p>
+            </figcaption>
+            </div> 
+            </figure>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+<!--Hotels-->
+    <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
+        <h2><strong>TOP</strong> Hotels & Resturants</h2>
+    </div>
+    <section id=hotels">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card1  mt-5">
+                        <img src="images/p1.webp" class="card-img-top" alt="..." height="150px">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Barahi</h5>
+                            <p class="card-text">Hotel Barahi: 
+                                <a class="button btn-pack" href="https://www.agoda.com/hotel-barahi/hotel/pokhara-np.html?cid=1844104" target="_blank">Visit Here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card1 mt-5">
+                        <img src="images/p2.webp" class="card-img-top" alt="..." height="150px">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Nightingale</h5>
+                            <p class="card-text">Hotel Nightingale:
+                                <a class="button btn-pack" href="https://www.hotels.com/ho633427/hotel-nightingale-pokhara-nepal/" target="_blank">Visit here</a>  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card1 mt-5">
+                        <img src="images/p3.jpg" class="card-img-top" alt="..." height="150px">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Karuna</h5>
+                            <p class="card-text">Hotel Karuna:  
+                                <a class="button btn-pack" href="https://www.tripadvisor.com/Hotel_Review-g293891-d12172169-Reviews-Hotel_Karuna-Pokhara_Gandaki_Zone_Western_Region.html" target="_blank">Visit Here</a>
+            </div>
+                            </p>
+                        </div>
+                    </div>                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card1 mt-5">
+                        <img src="images/p4.jpg" class="card-img-top" alt="..." height="150px">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Kausi</h5>
+                            <p class="card-text">Hotel Kausi:
+                                <a class="button btn-pack" href="https://planetofhotels.com/en/nepal/pokhara/hotel-kausi" target="_blank">Visit Here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+<!--Ends Here-->
+
+    <div id="map">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async>   
+        </script>
+        <h3>Map of Pokhara</h3>
+    </div>
+
+<!--Footer-->
+<section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+            </div>
+    
+            <div class="col-md-3">
+                <br>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#container" class="nav-link">Places to Visit</a>
+                <a href="#" class="nav-link">Contact</a>
+                
+            </div>
+        </div>
+    </div>
+            <br>
+                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
+
+</section>
+</body>
+</html>
