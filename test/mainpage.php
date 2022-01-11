@@ -119,8 +119,11 @@
         </section>
 
 
+
         <!-- footer -->
-        <footer class="footer-area">
+     <!-- footer -->
+    
+     <footer class="footer-area">
         <div class="footer-wave-box">
             <div class="footer-wave footer-animation"></div>
         </div>
@@ -135,74 +138,71 @@
                         <a href="" class="color"><i class="icon fa fa-instagram"></i></a>
                         <a href="" class="color"><i class="icon fa fa-linkedin"></i></a>
                         <a href="" class="color"><i class="icon fa fa-twitter"></i></a>
+
                     </div>
                 </div>
                 <div class="single-footer">
                     <h4>main menu</h4>
                     <ul>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Home</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> About us</a></li>
+                        <li><a href="#home-sec"><i class="fas fa-angle-right"></i> Home</a></li>
+                        <li><a href="#about-sec"><i class="fas fa-angle-right"></i> About us</a></li>
                         <li><a href=""><i class="fas fa-angle-right"></i> Contact us</a></li>
-                    
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>Helpful links</h4>
                     <ul>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Services</a></li>
+
                         <li><a href=""><i class="fas fa-angle-right"></i> Supports</a></li>
                         <li><a href=""><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
                         <li><a href=""><i class="fas fa-angle-right"></i> Terms & Conditions</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Disclaimer</a></li>
+                        
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>contact us</h4>
-                    <ul>
-                        <li><a href=""><i class="fas fa-map-marker-alt"></i> Plot No 47,Amrit Bhavan,Opposite to Axis
-                                Bank,Nagpur 440023</a></li>
-                        <li><a href=""><i class="fas fa-mobile-alt"></i> +91 9397165725</a></li>
-                        <li><a href=""><i class="fas fa-envelope"></i> hi@fashio.com</a></li>
-                        <li><a href=""><i class="fas fa-globe"></i> www.fashionworld.com</a></li>
-                    </ul>
+                    
+         <section id="contact-sec>
+         <div class="contact-container">
+        <form action="./php/message.php" class="contact-form" id="contact" method="POST">
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Name" name="name"/>
+          </div>
+
+          <div class="contact-input-container">
+            <input type="email" class="input" placeholder="Email" name="email"/>
+          </div>
+
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Address" name="address" />
+          </div>
+
+          <div class="contact-input-container">
+            <textarea
+              class="msg-input"
+              rows="4"
+              placeholder="Your message"
+                name="message"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+          <button type="submit" name="send" form="contact">Send</button>
+          </div>
+        </form>
+      </div>
+      </section>
+                    
                 </div>
                 <div class="single-footer">
-                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
+                <p class="copyright" style="text-align: center;"> Made by <br><b> Sagyan Sachin Lakpa </b> </p>
 
 
                 </div>
-            <!-- </div>
-            <div class="copy">
-                <p>&copy;  | All rights reserved |2021 </p>
-            </div>
-        </div> -->
+            
     </footer>
     
-        <!-- <section class="footer">
-            <div class="container tex-center">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h1>Useful Links</h1>
-                        <p>Privacy Policy</p>
-                        <p>Terms of Use</p>
-                    </div>
-            
-                    <div class="col-md-3">
-                        <br>
-                        <a href="#" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">About Us</a>
-                        <a href="#" class="nav-link">Places to Visit</a>
-                        <a href="#" class="nav-link">Contact</a>                       
-                    </div>
-                    <div class="col-md-3">
-                        <h1>Follow Us On</h1>
-                        <p><i class="fa fa-facebook-official"></i> Facebook</p>
-                        <p><i class="fa fa-twitter"></i> Twitter</p>
-                    </div>
-                </div>
-                <hr>
-                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
-            </section> -->
+    
+        
 
     </body>
 </html>

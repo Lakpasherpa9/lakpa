@@ -33,10 +33,10 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACT US </a>
+                        <a href="#contact-sec" class="nav-link">CONTACT US </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">COVID-19 </a>
+                        <a href="#covid-sec" class="nav-link">COVID-19 </a>
                     </li>
                 </ul>
             </div> 
@@ -65,8 +65,8 @@
         <section class="services-section bg-light" id="home-sec">
             <div class="container">
                 <div class="row d-flex">
-                    
                     <div class="column-cont col-md-3 d-flex align-self-stretch">
+                    <div class="link"><a href="#">
                         <div class="block-6 services d-block text-center">
                             <div class="d-flex justify-content-center">
                                 <div class="icon">
@@ -75,28 +75,33 @@
                             </div>
                             <div class="media-body p-2 mt-2">
                                 <h3 class="heading mb-3">CULTURE</h3>
-                                <p>The temples, stupas, religious and culturally important sites.</p>
+                                <p class="ling">The temples, stupas, religious and culturally important sites.</p>
                             </div>
-                        </div>
-                        
+                        </div></a>
+                    </div>
+            
                 </div>
-                
+                </button>
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
+                     <div class="link"><a href="./site.php">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
                             <div class="icon">
                                 <span class="pic-icon"><img src="images/mountain.png" height="80px"></span>
                             </div>
+                           
                         </div>
                        
                         <div class="media-body p-2 mt-2">
                             <h3 class="heading mb-3">Sites</h3>
-                            <p>Immersive scenary of rivers, lakes, hills, valleys and mountains as rarely found in the world.</p>
+                            <p class="ling">Immersive scenary of rivers, lakes, hills, valleys and mountains as rarely found in the world.</p>
                         </div>
+                        </div></a>
                     </div>
                 </div>
     
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
+                <div class="link"><a href="#">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
                             <div class="icon">
@@ -105,11 +110,13 @@
                         </div>
                         <div class="media-body p-2 mt-2">
                             <h3 class="heading mb-3">Adventure</h3>
-                            <p>Seek the thrill for your life with paragliding, rafting, mountain climbing, bungy jumping and many more.</p>
+                            <p class="ling">Seek the thrill for your life with paragliding, rafting, mountain climbing, bungy jumping and many more.</p>
                         </div>
+                        </div></a>
                     </div>                    
                 </div>
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
+                <div class="link"><a href="food.php">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
                             <div class="icon">
@@ -118,11 +125,12 @@
                         </div>
                         <div class="media-body p-2 mt-2">
                             <h3 class="heading mb-3">Food</h3>
-                            <p>Find most unique food available in this country. Every corner might have a food you will love.</p>
+                            <p class="ling">Find most unique food available in this country. Every corner might have a food you will love.</p>
                         </div>
+                    </div></a>
                     </div>        
                 </div>        
-            </>
+            
             </div>
         </section>
         
@@ -258,19 +266,28 @@
                 </div>
             </section>
 
+            <img src="./images/pic01-2.jpg" width="85%" height="1%" style="margin-left: 5%">
+
+
         <!-- Covid Section -->
-        <section id="covid">
-            <div>
-                <h2>
-                    Covid Regulations
-                </h2>
-               <ul>
-                   <li></li>
+        <!-- Covid Section -->
+        <section id="#covid-sec">
+            <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
+                <h2>Covid Regulations</h2>
+                <ul>
+                   <li>COVID-19 vaccination certificate showing full does of vaccination with the last does taken at least 14 days prior to arriving in Nepal,</li>
+                   <li>All foreigners arriving in Nepal must make COVID-19 test at the immigration point in Nepal. If one is found COVID-19 positive, s/he shall go to any isolation center or hospital designated by the Ministry of Health and Population.</li>
+                   <li>Travelers without certificate of full doze vaccination are not eligible for visa-one-arrival. They must take visa from the Embassy to enter into Nepal.  Such persons require to go for 10 days of hotel quarantine in Kathmandu to the designated hotels</li>
+                   <li>COVID-19 test report (RT-PCR, Gene Expert, True NAAT or WHO accredited test) showing negative result done within last 72 hours of boarding from the first airport or, if the traveler is entering through land boarder, taken within 72 hours of entry. This report will not required for the children below 5 years. </li>
+                   <li>If any symptom of COVID-19 is found or suspected you must make COVID-19 test as soon as possible and remain in isolation if found positive. 
+                       You must bear all the expenses of COVID-19 tests, hotel quarantine, hospitalization, remaining in isolation etc.</li> 
+                    <li>The list of hotels to stay in quarantine can be found <a href="https://mofa.gov.np/wp-content/uploads/2021/06/Updated-hotel-quarantine-list-by-DOT-8june-1.pdf" target="_blank"><b>here</b></a>.</li>
+
                </ul>
             </div>
-
         </section>
-    
+
+        <img src="./images/pic01-2.jpg" width="85%" height="1%" style="margin-left: 5%">
 
 <!-- About Section -->
 
@@ -278,39 +295,30 @@
       <div class="about-header">
         <h5 class="heading">Developers!</h5>
         <h2 class="about-body">
-          Emerging computer Engineers of KCC <br/>
+          Computer Engineering Students of KCC <br/>
         </h2>
       </div>
       <div class="about-info">
         <div class="about-block">
-          <img src="./images/lakpa.jpg" alt="lotus" class="about-img" />
+          <img src="./images/lakpa-modified.png" alt="Lakpa" class="about-img" />
           <div class="about-info-div">
             <h3 class="about-info-header">Lakpa sherpa</h3>
-            <p>
-              
-            </p>
           </div>
          </div>
         
 
         <div class="about-block">
-          <img src="./images/sachin.jpg" alt="brain" class="about-img" />
+          <img src="./images/Sachin-modified.png" alt="Sachin" class="about-img" />
           <div class="about-info-div">
             <h3 class="about-info-header">Sachin Shrestha</h3>
-            <p>
-             
-            </p>
           </div>
         </div>
       
 
       <div class="about-block">
-          <img src="./images/3.png" alt="yoga" class="about-img" />
+          <img src="./images/sagyan-modified.png" alt="Sagyan" class="about-img" />
           <div class="about-info-div">
             <h3 class="about-info-header">Sagyan Shrestha</h3>
-            <p>
-             
-            </p>
           </div>
         </div>
     </div>
@@ -324,6 +332,7 @@
 
 
     <!-- footer -->
+    
         <footer class="footer-area">
         <div class="footer-wave-box">
             <div class="footer-wave footer-animation"></div>
@@ -347,7 +356,6 @@
                     <ul>
                         <li><a href="#home-sec"><i class="fas fa-angle-right"></i> Home</a></li>
                         <li><a href="#about-sec"><i class="fas fa-angle-right"></i> About us</a></li>
-
                         <li><a href=""><i class="fas fa-angle-right"></i> Contact us</a></li>
                     </ul>
                 </div>
@@ -363,47 +371,46 @@
                 </div>
                 <div class="single-footer">
                     <h4>contact us</h4>
-                    <ul>
-                        <li><a href=""><i class="fas fa-map-marker-alt"></i> Plot No 47,Amrit Bhavan,Opposite to Axis
-                                Bank,Nagpur 440023</a></li>
-                        <li><a href=""><i class="fas fa-mobile-alt"></i> +91 9397165725</a></li>
-                        <li><a href=""><i class="fas fa-envelope"></i> hi@fashio.com</a></li>
-                        <li><a href=""><i class="fas fa-globe"></i> www.fashionworld.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <div class="copy">
-                <p>&copy;  | All rights reserved |2021 </p>
-            </div> -->
-        </div>
-    </footer>
+                    
+         <section id="contact-sec>
+         <div class="contact-container">
+        <form action="./php/message.php" class="contact-form" id="contact" method="POST">
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Name" name="name"/>
+          </div>
 
-    <!-- <section class="footer">
-            <div class="container tex-center">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h1>Useful Links</h1>
-                        <p>Privacy Policy</p>
-                        <p>Terms of Use</p>
-                    </div>
-            
-                    <div class="col-md-3">
-                        <br>
-                        <a href="#" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">About Us</a>
-                        <a href="#" class="nav-link">Places to Visit</a>
-                        <a href="#" class="nav-link">Contact</a>
-                        
-                    </div>
-                    <div class="col-md-3">
-                        <h1>Follow Us On</h1>
-                        <p><i class="fa fa-facebook-official"></i> Facebook</p>
-                        <p><i class="fa fa-twitter"></i> Twitter</p>
-                    </div>
+          <div class="contact-input-container">
+            <input type="email" class="input" placeholder="Email" name="email"/>
+          </div>
+
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Address" name="address" />
+          </div>
+
+          <div class="contact-input-container">
+            <textarea
+              class="msg-input"
+              rows="4"
+              placeholder="Your message"
+                name="message"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+          <button type="submit" name="send" form="contact">Send</button>
+          </div>
+        </form>
+      </div>
+      </section>
+                    
                 </div>
-                <hr>
-                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
-            </section> -->
+                <div class="single-footer">
+                <p class="copyright"> Made by <br><b> Sagyan Sachin Lakpa </b> </p>
+
+
+                </div>
+            
+    </footer>
+    
 
     </body>
 </html>
