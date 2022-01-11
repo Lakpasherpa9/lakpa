@@ -10,13 +10,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="js/map.js"></script>
+        <link rel="stylesheet" href="style/map.css">
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'); 
+        </style>
     </head>
     
     <body> 
 
         <!--header-->
 
-        <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong">
+        <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong" id="navbar">
             <a href="test002.html" class="navbar-brand">
                 <img src="images/Logo 03.png" height="60px">   
             </a>
@@ -139,7 +145,7 @@
                 <div class="row justify-content-start mb-5 pb-3">
                     <div class="col-md-7 heading-section">
                         <br>
-                        <h2><strong>TOP</strong> Destinations</h2>
+                        <h2 class="topd"><u>TOP Destinations</u></h2>
                     </div>
                 </div>
             </div>
@@ -219,7 +225,7 @@
 
             <!--Top Food-->
             <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
-                <h2><strong>TOP</strong> Food and Cuisines</h2>
+                <h2><u>TOP  Food and Cuisines </u></h2>
             </div>
             <section id="delicacies">
                 <div class="container">
@@ -268,7 +274,8 @@
 
             <img src="./images/pic01-2.jpg" width="85%" height="1%" style="margin-left: 5%">
 
-
+             <br>
+                  
         <!-- Covid Section -->
         <!-- Covid Section -->
         <section id="#covid-sec">
@@ -288,6 +295,17 @@
         </section>
 
         <img src="./images/pic01-2.jpg" width="85%" height="1%" style="margin-left: 5%">
+
+        <br>
+        <!--Map Section-->
+        <section id="map">
+                 <div class="Nmap" id="map">  
+                        <script
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly"
+                                 async>
+                        </script>
+                 </div>
+             </section>  
 
 <!-- About Section -->
 
@@ -322,12 +340,7 @@
           </div>
         </div>
     </div>
-    </section> 
-        
-
-        
-
-
+    </section>       
     <!-- End of about section -->
 
 
@@ -344,19 +357,17 @@
                     <p>We are here to help and answer any question you might have. We look forward to hearing from you
                     </p>
                     <div class="footer-social">
-                        <a href="" class="color"><i class="icon fa fa-facebook"></i></a>
-                        <a href="" class="color"><i class="icon fa fa-instagram"></i></a>
-                        <a href="" class="color"><i class="icon fa fa-linkedin"></i></a>
-                        <a href="" class="color"><i class="icon fa fa-twitter"></i></a>
-
+                       <a class="color" href="https://github.com/Lakpasherpa9/lakpa"><i class="fa fa-github" aria-hidden="true"></i></a>
+                       <a class="color" href="https://sachinshrestha10@protonmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="single-footer">
                     <h4>main menu</h4>
                     <ul>
-                        <li><a href="#home-sec"><i class="fas fa-angle-right"></i> Home</a></li>
+                    <!-- #home-sec -->
+                        <li><a href=" #navbar"><i class="fas fa-angle-right"></i> Home</a></li>
                         <li><a href="#about-sec"><i class="fas fa-angle-right"></i> About us</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Contact us</a></li>
+                        <li><a href="#contact-sec"><i class="fas fa-angle-right"></i> Contact us</a></li>
                     </ul>
                 </div>
                 <div class="single-footer">
@@ -364,8 +375,6 @@
                     <ul>
 
                         <li><a href=""><i class="fas fa-angle-right"></i> Supports</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Terms & Conditions</a></li>
                         
                     </ul>
                 </div>
@@ -373,7 +382,7 @@
                     <h4>contact us</h4>
                     
          <section id="contact-sec>
-         <div class="contact-container">
+         <div class ="contact-container">
         <form action="./php/message.php" class="contact-form" id="contact" method="POST">
           <div class="contact-input-container">
             <input type="text" class="input" placeholder="Name" name="name"/>
@@ -396,18 +405,18 @@
             ></textarea>
           </div>
           <div class="btn-box">
-          <button type="submit" name="send" form="contact">Send</button>
+            <button type="submit" name="send" form="contact">Send</button>
           </div>
         </form>
       </div>
+            </div>
       </section>
                     
-                </div>
-                <div class="single-footer">
+         </div>
+            <div class="single-footer">
                 <p class="copyright"> Made by <br><b> Sagyan Sachin Lakpa </b> </p>
 
-
-                </div>
+            </div>
             
     </footer>
     
