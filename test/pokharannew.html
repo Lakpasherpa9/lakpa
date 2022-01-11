@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style-test002.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.11.0/css/ol.css" type="text/css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.11.0/build/ol.js"></script>
    <script>
        function initMap() {
 
@@ -36,7 +38,7 @@
       margin: 1px;
       padding-left: 90px;
     }
-
+    
     .navbar{
         height: 70px;
     }
@@ -97,7 +99,7 @@
         <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
     </nav> 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -187,7 +189,7 @@
     <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
         <h2><strong>TOP</strong> Hotels & Resturants</h2>
     </div>
-    <section id=hotels">
+    <section id="hotels">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 g-4 ">
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -239,10 +241,45 @@
     </section>
 
     <br><br><br>
+
+
+        <!--Weather-->
+<div class="weather"> 
+    <h1>Weather</h1>
+   <!-- <input type="button" value="Weather" class="button"> -->
+    <div class="weatherWidget"></div>
+    <script>
+      window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+      window.weatherWidgetConfig.push({
+          selector:".weatherWidget",
+          apiKey:"7EQ76294JJPVWZZLGR5CGXEXJ", //Sign up for your personal key
+          location:"Pokhara, Nepal", //Enter an address
+          unitGroup:"metric", //"us" or "metric"
+          forecastDays:5, //how many days forecast to show
+          title:"Pokhara, Nepal", //optional title to show in the 
+          showTitle:true, 
+          showConditions:true
+      });
+     
+      (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+   </script>
+    </div>
+    <div class="show">
+      <h4 class="temp"></h4>
+    <h4 class="wdesc"></h4>
+    <h4 class="temp2"></h4>
+    </div>
+    <script src="D:\Project V\Final Proj\weather.js"></script>
+    <br>
 <!--Ends Here-->
 
     <div id="map">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtcMGNEfENFFYXxSa2LrRixcxpnDksDY&callback=initMap&v=weekly" async>   
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACZKJLZgCtSAMlheez3xEVTqY80GzkKb0&callback=initMap&v=weekly" async>   
         </script>
         <h3>Map of Pokhara</h3>
     </div>
