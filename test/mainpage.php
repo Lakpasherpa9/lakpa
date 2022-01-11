@@ -79,24 +79,43 @@
         </section>
 
      
+        <br><br><br><br><br><br>
         <section>
-            <div>
-                <h2>Humla</h2>
-                <img src="./images/humla.webp" alt="" height="50%" width="50%">
-                <img src="./images/humla1.webp" alt="" height="50%" width="50%">
-                <p>Humla is a paradise for those seeking an authentic cultural and wilderness trekking experience. 
-                    The lower and the middle portion of the region is home to the Khas ethnic 
-                    communities (Chettri, Bahun, Thakuri, Damai, and Kami), while the
-                     upper section is populated by Buddhist communities that migrated from Tibet ages ago</p>
-            </div>
+        <div class="container">
+                 <h2>Humla</h2>
+                 
+                 <div class="row">
+                 <div class="col-lg-6">
+                    <img src="./images/humla.webp" alt=""  width="80%">
+                 </div>
+                <div class="col-lg-6">
+                    <img src="./images/humla1.webp" alt="" width="80%" >
+                    </div>
+                    </div>
+                    <br>
+                    <p>Humla is a paradise for those seeking an authentic cultural and wilderness trekking experience. 
+                        The lower and the middle portion of the region is home to the Khas ethnic 
+                        communities (Chettri, Bahun, Thakuri, Damai, and Kami), while the
+                        upper section is populated by Buddhist communities that migrated from Tibet ages ago</p>
+                
+            
             <div>
                 <h2>Dolpa</h2>
+                <div class="row">
+                 <div class="col-lg-6">
+                    <img src="./images/Dolpa1.jpg" alt=""  width="80%">
+                 </div>
+                <div class="col-lg-6">
+                    <img src="./images/dolpa3.jpg" alt="" width="80%" >
+                    </div>
+                    </div>
+                    <br>
                 <p>Dolpa region leads through scenic, hidden valley and ancient shrines like Shey Gompa.
                      Enjoying views of the pristine waters of Phoksundo Lake, encountering yak caravans that 
                      cross the high-Himalayan passes and mountain people
                      who live in some of the highest settlements on earth like the Dho-Tarap valley.</p>
             </div>
-
+        </div>
         </section>
 
 
