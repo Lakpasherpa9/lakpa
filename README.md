@@ -1,14 +1,16 @@
 # TunTun Tourist Guide
 Exchanging & Informing always been a keen interest and joy for US and bringing it been a great joy for us.
-This came as a College-Project but yeah worked pretty heafty and have dote this project.
+This came as a College-Project but we have worked pretty heafty and have been doing this project.
 It's a informative site for tourism guide in NEPAL with features:
-          i).Description of Popular places
+          <ul>
+        <li>  i).Description of Popular places</li>
           ii).Cultural Heritages 
           iii).Top Cuisines
           iv).Travel wishlist board
           v).Current map location
           vi).Covid Rules & regulations
           vii).Login & Register
+          </ul>
 Objectives:
            i).To provide best travelling guide and information to the travelers and any enthusiasts.
            ii).To provide a platform where tourist can find their ideal tour places according to their preference and popularity.
