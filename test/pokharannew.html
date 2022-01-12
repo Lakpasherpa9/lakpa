@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.11.0/css/ol.css" type="text/css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.11.0/build/ol.js"></script>
+
     <script>
         function initMap() {
 
@@ -31,6 +32,8 @@
         }
     </script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'); 
+        
         body {
             background-image: none;
         }
@@ -44,33 +47,22 @@
         .navbar {
             height: 70px;
         }
-        /* .nav-item >.nav-link{
-        background-color: rgb(6, 71, 68);
-    }
-  /*  .contain{
-        width:800px;
-        height: 400px;
-        padding-left: 12px;
-        padding-right: 10px;
-        padding-bottom: 12px;
-        margin-right: 2px;
-        display:flex;
-    }
-    .contain:hover .tex{
-        max-height: 20%;
-    }
-    .tex {
-    padding-bottom: 10px;
-    white-space: nowrap; 
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
+        .heading-section{
+            font-family:'Inter', sans-serif;
+            padding-left: 500px;
+            padding-top: 20px;
+        }
+        .mt-4{
+            font-family:'Inter', sans-serif;
+            text-align: center;
+        }
+        .nav-item .button{
+            padding-right: 3px;
+        letter-spacing: 2px;
+	    font-weight: 400;
+	    font-size: 14px;
+	    color: #0e475a;
+        }
     </style>
 </head>
 
@@ -85,16 +77,22 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">HOME</a>
+                    <a href="index.php" class="nav-link ">HOME
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#map" class="nav-link">MAP</a>
+                    <a href="index.php/#about-sec" class="nav-link">ABOUT</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact-sec" class="nav-link">CONTACT US</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#weather" class="nav-link">WEATHER</a>
+                    <!--Weather button-->
+                    <input type="button" value="Weather" class="button">
+                    <script src="js/weather.js"></script>
                 </li>
             </ul>
         </div>
@@ -110,7 +108,7 @@
         <div class="row justify-content-start mb-5 pb-3">
             <div class="col-md-7 heading-section">
                 <br>
-                <h2 style="margin-left:70%;font-size: 50px;">Pokhara</h2>
+                <h2><u>Pokhara</u></h2>
             </div>
         </div>
     </div>
@@ -189,7 +187,7 @@
     </div>
     <!--Hotels-->
     <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
-        <h2><strong>TOP</strong> Hotels & Resturants</h2>
+        <h2><u>TOP Hotels & Resturants</u></h2>
     </div>
     <section id="hotels">
         <div class="container">
@@ -246,7 +244,7 @@
 
 
     <!--Weather-->
-    <div class="weather" id="weather">
+    <div class="weather">
         <h1>Weather</h1>
         <!-- <input type="button" value="Weather" class="button"> -->
         <div class="weatherWidget"></div>
@@ -254,11 +252,11 @@
             window.weatherWidgetConfig = window.weatherWidgetConfig || [];
             window.weatherWidgetConfig.push({
                 selector: ".weatherWidget",
-                apiKey: "7EQ76294JJPVWZZLGR5CGXEXJ", //Sign up for your personal key
-                location: "Pokhara, Nepal", //Enter an address
+                apiKey: "7EQ76294JJPVWZZLGR5CGXEXJ", //API key
+                location: "Pokhara, Nepal", 
                 unitGroup: "metric", //"us" or "metric"
-                forecastDays: 5, //how many days forecast to show
-                title: "Pokhara, Nepal", //optional title to show in the 
+                forecastDays: 5, 
+                title: "Pokhara, Nepal", 
                 showTitle: true,
                 showConditions: true
             });
@@ -281,7 +279,7 @@
     <br>
     <!--Ends Here-->
 
-    <div class="map" id="map">
+    <div id="map">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACZKJLZgCtSAMlheez3xEVTqY80GzkKb0&callback=initMap&v=weekly" async>
         </script>
         <h3>Map of Pokhara</h3>
