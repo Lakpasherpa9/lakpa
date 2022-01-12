@@ -79,7 +79,7 @@
                                     <i class="far fa-star"></i>
                                 </div>
                                 <div class="mt-3">
-                                <a href="https://www.lonelyplanet.com/nepal/kathmandu" target="_blank">
+                                <a href="./kathmandu.html" target="_blank">
                                     <button type="button" class="btn btn-danger">Check out</button>
                                 </a>
                                 </div>  
@@ -151,7 +151,7 @@
 
                     <div class="col">
                         <div class="card h-100 text-center">
-                            <img src="images/coconut.jpg" class="card-img-top" alt="...">
+                            <img src="images/mustang1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Mustang </h5>
                                 <p class="card-text">No place tells the story of tourism fused with history like Badagry. It has breathtaking and beautiful ocean views, a perfect place for relaxation</p>
@@ -172,7 +172,7 @@
 
                     <div class="col">
                         <div class="card h-100 text-center">
-                            <img src="images/park.jpg" class="card-img-top" alt="...">
+                            <img src="images/illam1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Illam</h5>
                                 <p class="card-text">Located in the Eastern part of Nepal, Illam is famous for its tea plants that spreaded across hills makes one feel out of the world experiece.</p>
@@ -206,7 +206,7 @@
                     <p>We are here to help and answer any question you might have. We look forward to hearing from you
                     </p>
                     <div class="footer-social">
-                    <a href="" class="color"><i class="icon fa fa-facebook"></i></a>
+                        <a href="" class="color"><i class="icon fa fa-facebook"></i></a>
                         <a href="" class="color"><i class="icon fa fa-instagram"></i></a>
                         <a href="" class="color"><i class="icon fa fa-linkedin"></i></a>
                         <a href="" class="color"><i class="icon fa fa-twitter"></i></a>
@@ -216,36 +216,62 @@
                 <div class="single-footer">
                     <h4>main menu</h4>
                     <ul>
-                        <li><a href=""><i ></i> Home</a></li>
-                        <li><a href=""><i ></i> About us</a></li>
-                        <li><a href=""><i ></i> Contact us</a></li>
-                    
+                        <li><a href="#home-sec"><i></i> Home</a></li>
+                        <li><a href="#about-sec"><i></i> About us</a></li>
+                        <li><a href="#contact"><i></i> Contact us</a></li>
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>Helpful links</h4>
                     <ul>
-                        <li><a href=""><i ></i> Services</a></li>
-                        <li><a href=""><i ></i> Supports</a></li>
-                        <li><a href=""><i ></i> Privacy Policy</a></li>
-                        <li><a href=""><i ></i> Terms & Conditions</a></li>
+
+                        <li><a href=""><i></i> Supports</a></li>
+                        <li><a href=""><i></i> Privacy Policy</a></li>
+                        <li><a href=""><i></i> Terms & Conditions</a></li>
+                        
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>contact us</h4>
-                    <ul>
-                        <li><a href=""></i> +977 9826472347</a></li>
-                        <li><a href=""></i> tour@gmail.com</a></li>
-                        <li><a href=""></i> www.youtouristguide.com</a></li>
-                    </ul>
+                    
+         <section id="contact-sec>
+         <div class="contact-container">
+        <form action="./php/message.php" class="contact-form" id="contact" method="POST">
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Name" name="name"/>
+          </div>
+
+          <div class="contact-input-container">
+            <input type="email" class="input" placeholder="Email" name="email"/>
+          </div>
+
+          <div class="contact-input-container">
+            <input type="text" class="input" placeholder="Address" name="address" />
+          </div>
+
+          <div class="contact-input-container">
+            <textarea
+              class="msg-input"
+              rows="4"
+              placeholder="Your message"
+                name="message"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+          <button type="submit" name="send" form="contact">Send</button>
+          </div>
+        </form>
+      </div>
+      </section>
+                    
                 </div>
                 <div class="single-footer">
-                <p class="copyright">Made by Sagyan Sachin Lakpa</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                <p class="copyright"> Made by <br><b> Sagyan Sachin Lakpa </b> </p>
 
+
+         </div>
+</div>            
+    </footer>
     </body>
 </html>
     
