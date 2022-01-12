@@ -1,0 +1,23 @@
+.Nmap{
+    max-height: 440px;
+    max-width: 420px;
+}
+#map {
+    height: 380px;
+    margin: 1px;
+    padding-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  } 
+  /* .weather{
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+  }
+  input{
+    padding-left: 20px;;
+  } 
+  .show{
+    padding-left: 50px;
+    padding-top: 50px;
+  } */
