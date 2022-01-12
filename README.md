@@ -1,8 +1,8 @@
 # TunTun Tourist Guide
 Exchanging & Informing always been a keen interest and joy for US and bringing it been a great joy for us.
 This came as a College-Project but yeah worked pretty heafty and have dote this project.
-It's a informative site for tourism guide in NEPAL with featrues:
-          i).Deacription of Popular places
+It's a informative site for tourism guide in NEPAL with features:
+          i).Description of Popular places
           ii).Cultural Heritages 
           iii).Top Cuisines
           iv).Travel wishlist board
