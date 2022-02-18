@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row d-flex">
                     <div class="column-cont col-md-3 d-flex align-self-stretch">
-                    <div class="link"><a href="#">
+                    <div class="link"><a href="culture.php">
                         <div class="block-6 services d-block text-center">
                             <div class="d-flex justify-content-center">
                                 <div class="icon">
@@ -107,7 +107,7 @@
                 </div>
     
                 <div class="column-cont col-md-3 d-flex align-self-stretch">
-                <div class="link"><a href="#">
+                <div class="link"><a href="adventure.php">
                     <div class="block-6 services d-block text-center">
                         <div class="d-flex justify-content-center">
                             <div class="icon">
@@ -365,16 +365,16 @@
                     <h4>main menu</h4>
                     <ul>
                     <!-- #home-sec -->
-                        <li><a href=" #navbar"><i class="fas fa-angle-right"></i> Home</a></li>
-                        <li><a href="#about-sec"><i class="fas fa-angle-right"></i> About us</a></li>
-                        <li><a href="#contact-sec"><i class="fas fa-angle-right"></i> Contact us</a></li>
+                        <li><a href=" #navbar"> Home</a></li>
+                        <li><a href="#about-sec"> About us</a></li>
+                        <li><a href="#contact-sec"> Contact us</a></li>
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>Helpful links</h4>
                     <ul>
 
-                        <li><a href=""><i class="fas fa-angle-right"></i> Supports</a></li>
+                        <li><a href="">Supports</a></li>
                         
                     </ul>
                 </div>
