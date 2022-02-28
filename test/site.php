@@ -231,38 +231,9 @@
                         
                     </ul>
                 </div>
-                <div class="single-footer">
-                    <h4>contact us</h4>
+                
                     
-         <section id="contact-sec>
-         <div class="contact-container">
-        <form action="./php/message.php" class="contact-form" id="contact" method="POST">
-          <div class="contact-input-container">
-            <input type="text" class="input" placeholder="Name" name="name"/>
-          </div>
-
-          <div class="contact-input-container">
-            <input type="email" class="input" placeholder="Email" name="email"/>
-          </div>
-
-          <div class="contact-input-container">
-            <input type="text" class="input" placeholder="Address" name="address" />
-          </div>
-
-          <div class="contact-input-container">
-            <textarea
-              class="msg-input"
-              rows="4"
-              placeholder="Your message"
-                name="message"
-            ></textarea>
-          </div>
-          <div class="btn-box">
-          <button type="submit" name="send" form="contact">Send</button>
-          </div>
-        </form>
-      </div>
-      </section>
+         
                     
                 </div>
                 <div class="single-footer">

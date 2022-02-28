@@ -137,53 +137,22 @@
                 <div class="single-footer">
                     <h4>main menu</h4>
                     <ul>
-                        <li><a href="#home-sec"><i class="fas fa-angle-right"></i> Home</a></li>
-                        <li><a href="#about-sec"><i class="fas fa-angle-right"></i> About us</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Contact us</a></li>
+                        <li><a href="#home-sec"></i> Home</a></li>
+                        <li><a href="#about-sec"></i> About us</a></li>
+                        <li><a href=""></i> Contact us</a></li>
                     </ul>
                 </div>
                 <div class="single-footer">
                     <h4>Helpful links</h4>
                     <ul>
 
-                        <li><a href=""><i class="fas fa-angle-right"></i> Supports</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Privacy Policy</a></li>
-                        <li><a href=""><i class="fas fa-angle-right"></i> Terms & Conditions</a></li>
+                        <li><a href=""></i> Supports</a></li>
+                        <li><a href=""></i> Privacy Policy</a></li>
+                        <li><a href=""></i> Terms & Conditions</a></li>
                         
                     </ul>
                 </div>
-                <div class="single-footer">
-                    <h4>contact us</h4>
-                    
-         <section id="contact-sec">
-         <div class="contact-container">
-        <form action="./php/message.php" class="contact-form" id="contact" method="POST">
-          <div class="contact-input-container">
-            <input type="text" class="input" placeholder="Name" name="name"/>
-          </div>
-
-          <div class="contact-input-container">
-            <input type="email" class="input" placeholder="Email" name="email"/>
-          </div>
-
-          <div class="contact-input-container">
-            <input type="text" class="input" placeholder="Address" name="address" />
-          </div>
-
-          <div class="contact-input-container">
-            <textarea
-              class="msg-input"
-              rows="4"
-              placeholder="Your message"
-                name="message"
-            ></textarea>
-          </div>
-          <div class="btn-box">
-          <button type="submit" name="send" form="contact">Send</button>
-          </div>
-        </form>
-      </div>
-      </section>
+                
                     
                 </div>
                 <div class="single-footer">

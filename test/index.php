@@ -378,10 +378,10 @@
                         
                     </ul>
                 </div>
-                <div class="single-footer">
+                <!-- <div class="single-footer">
                     <h4>contact us</h4>
-                    
-         <section id="contact-sec>
+                     -->
+         <!-- <section id="contact-sec>
          <div class ="contact-container">
         <form action="./php/message.php" class="contact-form" id="contact" method="POST">
           <div class="contact-input-container">
@@ -410,7 +410,7 @@
         </form>
       </div>
             </div>
-      </section>
+      </section> -->
                     
          </div>
             <div class="single-footer">
