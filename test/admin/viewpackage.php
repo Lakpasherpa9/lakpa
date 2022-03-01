@@ -10,17 +10,7 @@
 <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--js--> 
-<script src="js/jquery.min.js"></script>
 
-<!--/js-->
-<!--animated-css-->
-<link href="../css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="../js/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
-<!--/animated-css-->
 </head>
 <body>
 <!--header-->
@@ -68,7 +58,6 @@ if(isset($_POST["sbmt"]))
 <tr><td style="font-size:15px; padding:5px; font-weight:bold;">ID</td>
 <td style="font-size:15px; padding:5px; font-weight:bold;">Package Name</td>
 <td style="font-size:15px; padding:5px; font-weight:bold;">Category</td>
-
 <td style="font-size:15px; padding:5px; font-weight:bold;">Price</td>
 <td style="font-size:15px; padding:5px; font-weight:bold;">Pic1</td>
 <td style="font-size:15px; padding:5px; font-weight:bold;">Pic2</td>
@@ -88,12 +77,11 @@ while($data=mysqli_fetch_array($result))
 		<td style=' padding:5px;'>$data[1]</td>
 		<td style=' padding:5px;'>$data[2]</td>
 		<td style=' padding:5px;'>$data[3]</td>
-		<td style=' padding:5px;'>$data[4]</td>
+		<td style=' padding:5px;'><IMG src='packimages/$data[4]' style='height:50PX' /></td>
 		<td style=' padding:5px;'><IMG src='packimages/$data[5]' style='height:50PX' /></td>
-		<td style=' padding:5px;'><IMG src='packimages/$data[6]' style='height:50PX' /></td>
-		<td style=' padding:5px;'><IMG src='packimages/$data[7]' style='height:50PX' /></td></tr>";
+		<td style=' padding:5px;'><IMG src='packimages/$data[6]' style='height:50PX' /></td></tr>";
 
-}
+}	
 
 
 ?>
