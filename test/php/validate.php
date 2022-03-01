@@ -1,47 +1,43 @@
-<?php
-$conn = mysqli_connect('localhost','root','root','project');  
+<?php 
+
+include "connection.php";
 session_start();
- if(isset($_POST["submit"]))
- {
-     $email = $_POST["email"];  // Passes the name in the login form to this variable
-     $pass =  $_POST["password"];     // Passes the Password in the login  form to this variable
 
-     $name_search = "SELECT * FROM users WHERE email= '$email'";
+if(isset($_POST['submit']))
+{
+  $email=$_POST['email'];
+  $pass= $_POST['password'];
 
-     $runsql = mysqli_query($conn,$name_search);
-     
-    $result = mysqli_num_rows($runsql);
-      if($result)
-     {
-             
-         $name_pass = mysqli_fetch_assoc($runsql);
+  $query="SELECT * FROM user WHERE email='$email'";
 
-         $fetched_pass = $name_pass["password"];
+  $run = mysqli_query($conn,$query);
 
-         $pass_verify = password_verify($pass,$fetched_pass);
+  $result = mysqli_num_rows($run);
 
-       if(!$pass_verify)
-        {
-          //  echo "Password not matched";
-          header('Location: index.php');
-        }
-        else
-        {
+  if($result)
+  {
+    $assoc=mysqli_fetch_assoc($run);
+    
+    $password=$assoc['password'];
 
-          $_SESSION['name']=$name_pass['fname'];
-            // echo "Passwords matched";
-           header("Location: ../mainpage.php");
-           die;
-        }
+    if($pass==$password)
+  {
+      $_SESSION['name']=$assoc['fname'];
+      $_SESSION['email']=$assoc['email'];
+      $_SESSION['address']=$assoc['address'];
+      header('Location:../mainpage.php');
 
     }
     else
     {
-        header("Location:login.php");
-        die;
-        //  echo "invalid Email";
+      header('Location:login.php');
+
     }
+
+  }
+  else
+  {
+    header('Location:login.php');
+  }
+
 }
-  
-        
-?>

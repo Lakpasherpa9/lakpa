@@ -1,48 +1,4 @@
-<?php 
 
-// session_start();
-
-// 	include("connection.php");
-// 	include("functions.php");
-
-
-// 	if($_SERVER['REQUEST_METHOD'] == "POST")
-// 	{
-// 		//something was posted
-// 		$user_name = $_POST['user_name'];
-// 		$password = $_POST['password'];
-
-// 		if(!empty($user_name) && !empty($password) )
-// 		{
-
-// 			//read from database
-// 			$query = "select * from test where user_name = '$user_name' limit 1";
-// 			$result = mysqli_query($con, $query);
-
-			
-// 				if($result && mysqli_num_rows($result) > 0)
-// 				{
-
-// 					$user_data = mysqli_fetch_assoc($result);
-					
-// 					if($user_data['password'] == $password)
-// 					{
-
-// 						$_SESSION['user_id'] = $user_data['user_id'];
-// 						header("Location: ./index.php");
-// 						die;
-// 					}
-// 				}
-			
-			
-// 	//echo "wrong username or password!";
-// 		}else
-// 		{
-// 			echo "Lakpa";
-// 		}
-// 	}
-
-?> 
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
@@ -84,7 +40,7 @@
                     </li>
                 </ul>
             </div> 
-            <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
+            <a class="cta" href="login.php"><button class="button1">Log In</button></a>  
         </nav> 
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -108,12 +64,14 @@
         </div>
         <!-- <div class="pass">Forgot Password?</div> -->
         <div class="submit">
-        <button type="submit" name="submit" form="login">Log In </button>
+        <button type="submit" name="submit" id = "submit" form="login">Log In </button>
         </div>
 		<a href="index.php"></a>
         <div class="signup_link">
 	
-          Not a member? <a href="signup.php">Signup</a>
+         <center> Not a member? <a href="signup.php">Signup</a></center>
+            <br>
+        <center> Login as Admin <a href="../admin/loginform.php"> Login </a></center>
         </div>
 		</form>
 	</div>

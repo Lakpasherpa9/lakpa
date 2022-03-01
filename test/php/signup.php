@@ -52,7 +52,7 @@
                     </li>
                 </ul>
             </div> 
-            <a class="cta" href="php/login.php"><button class="button1">Log In</button></a>  
+            <a class="cta" href="login.php"><button class="button1">Log In</button></a>  
         </nav> 
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

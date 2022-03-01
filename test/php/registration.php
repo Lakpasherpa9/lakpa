@@ -21,11 +21,11 @@ if(isset($_POST["submit"])) //checks if the user has clicked on the submit butto
 
     $cpass = $_POST["cpassword"];
 
-    $password = password_hash($pass,PASSWORD_BCRYPT);// hashing the password using blowfish algorithm
-    $cpassword = password_hash($cpass,PASSWORD_BCRYPT);
+    // $password = password_hash($pass,PASSWORD_BCRYPT);// hashing the password using blowfish algorithm
+    // $cpassword = password_hash($cpass,PASSWORD_BCRYPT);
 
     //making query
-    $email_query = "SELECT * FROM users WHERE email = '$email'";
+    $email_query = "SELECT * FROM user WHERE email = '$email'";
     
     //Fetching query
     $query = mysqli_query($conn, $email_query);
@@ -50,8 +50,8 @@ if(isset($_POST["submit"])) //checks if the user has clicked on the submit butto
          if($pass==$cpass)
          {
              //
-            $insertquery = "INSERT INTO `users` (`id`, `fname`, `lname`, `email`, `address`, `phone`, `password`, `cpassword`) 
-            VALUES (NULL, ' $fname', '$lname ', '$email ', '$addr ', '$phone ', '$password ', '$cpassword')";
+            $insertquery = "INSERT INTO `user` (`id`, `fname`, `lname`, `email`, `address`, `phone`, `password`, `cpassword`) 
+            VALUES ('', ' $fname', '$lname ', '$email ', '$addr ', '$phone ', '$password ', '$cpassword')";
              
             $iquery = mysqli_query($conn,$insertquery);
 
