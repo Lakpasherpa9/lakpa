@@ -222,7 +222,57 @@
                   <span class="carousel-control-next-icon"></span>
                 </a>
               </div>
+             <!-- Packages -->
+             <?php include('function.php'); ?>
 
+              <h1 align="center">Packages</h1>
+<table cellpadding="0px" cellspacing="0" width="1000px">
+<tr><td class="paraText" width="900px">
+<table cellpadding="0" cellspacing="0" width="900px">
+<?php
+$s="select * from package,category where package.category=category.Cat_id ";
+$result=mysqli_query($cn,$s);
+$r=mysqli_num_rows($result);
+//echo $r;
+$n=0;
+while($data=mysqli_fetch_array($result))
+{
+	
+	if($n%3==0)
+	{
+	?>
+		
+
+
+<tr>
+<?php
+
+	}?>
+<td>
+
+<table border="0" width="100px">
+
+<tr><td align="center" style="background-color:#60B0E6; font-size:20px; font-family:Lucida Calligraphy; color:#FFF"><?php echo $data[1]; ?></td></tr>
+<tr><td class="image"><img src="Admin/packimages/<?php echo $data[5];?>" width="250px" height="250px" /></td></tr>
+<tr><td align="center" style="background-color:#60B0E6; font-size:20px; font-family:Lucida Calligraphy; color:#09F"><a href="detail.php?pid=<?php echo $data[0];   ?>"><font color="#FFFFFF">View Detail</font></a></td></tr>
+</table>
+</td>
+<?php
+
+if($n%3==2)
+{
+?>
+</tr>
+<?php
+}
+$n=$n+1;
+}
+mysqli_close($cn);
+?>
+</table>
+</td></tr></table>
+</div>
+  
             <!--Top Food-->
             <div class="container Heading mt-4 mb-4" style="padding-top: 20px;">
                 <h2><u>TOP  Food and Cuisines </u></h2>
