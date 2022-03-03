@@ -23,7 +23,7 @@
         <!--header-->
 
         <nav class="navbar navbar-expand-sm navbar-dark shadow-5-strong" id="navbar">
-            <a href="test002.html" class="navbar-brand">
+            <a href="#" class="navbar-brand">
                 <img src="images/Logo 03.png" height="60px">   
             </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
