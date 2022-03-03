@@ -12,24 +12,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--js--> 
-<script src="js/jquery.min.js"></script>
-
-<!--/js-->
-<!--animated-css-->
-<link href="../css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="../js/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
-<!--/animated-css-->
 </head>
 <body>
-<!--header-->
-<!--sticky-->
+
 <?php
 if($_SESSION['loginstatus']=="")
 {
@@ -100,16 +86,16 @@ if(isset($_POST["sbmt"]))
 {
 	$cn=makeconnection();
 	
-	if (empty($_FILES['t3']['name'])) {
+	if (empty($_FILES['t4']['name'])) {
 	
-		$s="update package set Packname='" . $_POST["t1"] ."',Category='" . $_POST["t2"] . "',Subcategory='" . $_POST["t3"] . "',Packprice='" . $_POST["t8"] . "',Pic1='" . $_POST["h1"] . "',Pic2='" . $_POST["h2"]. "',Pic3='" .$_POST["h3"] . "',Detail='" . $_POST["t7"] . "' where Packid='" . $_POST["s1"] . "'";
+		$s="update package set Packname='" . $_POST["t1"] ."',Category='" . $_POST["t2"] . "',Packprice='" . $_POST["t3"] . "',Pic1='" . $_POST["h1"] . "',Pic2='" . $_POST["h2"]. "',Pic3='" .$_POST["h3"] . "',Detail='" . $_POST["t7"] . "' where Packid='" . $_POST["s1"] . "'";
 	
 }
 else
 {
 	
 	
-	$s="update package set Packname='" . $_POST["t1"] ."',Category='" . $_POST["t2"] . "',Subcategory='" . $_POST["t3"] . "',Packprice='" . $_POST["t8"] . "',Pic1='" .  basename($_FILES["t4"]["name"]) . "',Pic2='" .  basename($_FILES["t5"]["name"]) . "',Pic3='" .  basename($_FILES["t6"]["name"]) . "',Detail='" . $_POST["t7"] . "' where Packid='" . $_POST["s1"] . "'";}
+	$s="update package set Packname='" . $_POST["t1"] ."',Category='" . $_POST["t2"] . "',Packprice='" . $_POST["t3"] . "',Pic1='" .  basename($_FILES["t4"]["name"]) . "',Pic2='" .  basename($_FILES["t5"]["name"]) . "',Pic3='" .  basename($_FILES["t6"]["name"]) . "',Detail='" . $_POST["t7"] . "' where Packid='" . $_POST["s1"] . "'";}
 	mysqli_query($cn,$s);
 	mysqli_close($cn);
 	echo "<script>alert('Record Update');</script>";
@@ -172,12 +158,12 @@ $data=mysqli_fetch_array($result);
 $Packid=$data[0];
 $Packname=$data[1];
 $Category=$data[2];
-$Subcategory=$data[3];
-$Packprice=$data[4];
-$Pic1=$data[5];
-$Pic2=$data[6];
-$Pic3=$data[7];
-$Detail=$data[8];
+
+$Packprice=$data[3];
+$Pic1=$data[4];
+$Pic2=$data[5];
+$Pic3=$data[6];
+$Detail=$data[7];
 
 mysqli_close($cn);
 
@@ -216,39 +202,8 @@ mysqli_close($cn);
 
 ?>
 
-</select>
 
-<tr><td class="lefttxt">Select Subcategory</td><td><select name="t3" required/><option value="">Select</option>
-
-<?php
-$cn=makeconnection();
-$s="select * from subcategory";
-$result=mysqli_query($cn,$s);
-$r=mysqli_num_rows($result);
-//echo $r;
-
-while($data=mysqli_fetch_array($result))
-{
-	if(isset($_POST["show"])&& $Subcategory==$data[0])
-	{
-		
-		echo "<option value=$data[0] selected='selected' >$data[1]</option>";
-	}
-	else
-	{
-		echo "<option value=$data[0]>$data[1]</option>";
-	
-}
-}
-mysqli_close($cn);
-
-
-
-?>
-
-</select>
-
-<tr><td class="lefttxt">Package Price</td><td><input type="text" name="t8" value="<?php if(isset($_POST["show"])){ echo $Packprice ;} ?> " /></td></tr>
+<tr><td class="lefttxt">Package Price</td><td><input type="text" name="t3" value="<?php if(isset($_POST["show"])){ echo $Packprice ;} ?> " /></td></tr>
 
 <tr><td class="lefttxt">Old Pic</td><td><img src="packimages/<?php echo @$Pic1; ?>" width="150px" height="50px" />
 <input type="hidden" name="h1" value="<?php if(isset($_POST["show"])) {echo $Pic1;} ?>" />
